@@ -1,0 +1,10 @@
+SERVICE:
+Uma maneira abstrata de expor um aplicativo em execução em um conjunto de Pods como um serviço de rede.
+Com o Kubernetes, você não precisa modificar seu aplicativo para usar um mecanismo de descoberta de serviço desconhecido. O Kubernetes fornece aos pods seus próprios endereços IP e um único nome DNS para um conjunto de pods e pode balancear a carga entre eles
+
+NAMESPACE:
+No Kubernetes, os namespaces fornecem um mecanismo para isolar grupos de recursos em um único cluster. Os nomes dos recursos precisam ser exclusivos em um namespace, mas não entre namespaces. O escopo baseado em namespace é aplicável apenas para objetos com namespace (por exemplo, Deployments, Services, etc.) e não para objetos de cluster (por exemplo, StorageClass, Nodes, PersistentVolumes, etc) 
+
+DEPLOYMENT:
+Uma implantação fornece atualizações declarativas paraPods e Conjuntos de réplicas.
+Você descreve um estado desejado em uma implantação e a implantaçãoControladoraltera o estado real para o estado desejado a uma taxa controlada. Você pode definir implantações para criar novos ReplicaSets ou remover implantações existentes e adotar todos os seus recursos com novas implantações.

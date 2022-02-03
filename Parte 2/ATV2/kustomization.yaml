@@ -1,0 +1,12 @@
+resources:
+  - svc-mysql-wordpress.yaml
+  - pvc-mysql-wordpress.yaml
+  - dpm-mysql-wordpress.yaml
+  - svc-wp-wordpress.yaml
+  - pvc-wp-wordpress.yaml
+  - dpm-wp-wordpress.yaml
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=c2VuaGExMjM=
+    
